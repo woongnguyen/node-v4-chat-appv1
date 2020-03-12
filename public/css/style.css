@@ -69,6 +69,8 @@ input::placeholder{
 }
 .chat_main{
   width: 75%;
+  display: flex;
+  flex-direction: column;
 }
 .compose{
   display: flex;
@@ -89,7 +91,7 @@ input::placeholder{
 #messages{
   padding:10px;
   box-sizing: border-box;
-  height: calc( 100vh - 58px);
+  height: calc( 100vh - 57px);
   overflow: hidden;
   overflow-y: auto;
   position: relative;
@@ -157,4 +159,51 @@ input::placeholder{
   width: 100%;
   background:#151515;
   color:#fff;
+}
+.center-form-box button:hover{
+  color:#0086bb;
+  border:solid 1px #0086bb;
+}
+.pc_hide{
+  display:none;
+}
+@media screen and (max-width:520px) {
+  .pc_hide{
+    display:block;
+  }
+  .btn-chat{
+    font-size:0;
+    line-height: normal;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    padding:0;
+  }
+  .btn-chat span{
+    max-height: 32px;
+    overflow: hidden;
+  }
+  .btn-chat img{
+    width:20px;
+    height:20px;
+    line-height: 0;
+    display: block;
+    margin: 0 auto;
+  }
+  #send-location{
+    width:35px;
+  }
+  .compose{
+    justify-content: space-between;
+    position: relative;
+  }
+  #message-form{
+    width:calc(100% - 40px);
+    justify-content: space-between;
+  }
+  #message-form input{
+    box-sizing: border-box;
+    width:calc(100% - 40px);
+    border-radius:60px;
+  }
 }

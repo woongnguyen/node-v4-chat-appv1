@@ -37,6 +37,15 @@ const autoscroll = () => {
     $messages.scrollTop = $messages.scrollHeight
   }
 }
+caculateHeight = (callback) => {
+  const w = document.querySelector('body').offsetHeight
+  document.querySelector('.chat_sidebar').setAttribute('style','height:'+ w +'px')
+  document.querySelector('.chat_main').setAttribute('style','height:'+ w +'px')
+  
+  console.log(w)
+  // callback()
+}
+caculateHeight()
 
 socket.on('welcome', (message) => {
   console.log(message)
