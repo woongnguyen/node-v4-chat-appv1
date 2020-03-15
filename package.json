@@ -1,7 +1,7 @@
 {
   "name": "chat-app",
   "version": "1.0.0",
-  "description": "",
+  "description": "access to the site with link bellow:\r https://quannm-node-v1-chat-app.herokuapp.com/",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
@@ -16,5 +16,13 @@
   },
   "devDependencies": {
     "nodemon": "^2.0.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woongnguyen/node-v4-chat-appv1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/woongnguyen/node-v4-chat-appv1/issues"
+  },
+  "homepage": "https://github.com/woongnguyen/node-v4-chat-appv1#readme"
 }
